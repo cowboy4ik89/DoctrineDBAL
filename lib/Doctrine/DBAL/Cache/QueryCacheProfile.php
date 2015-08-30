@@ -33,17 +33,17 @@ class QueryCacheProfile
     /**
      * @var \Doctrine\Common\Cache\Cache|null
      */
-    private $resultCacheDriver;
+    protected /*private*/ $resultCacheDriver;
 
     /**
      * @var integer
      */
-    private $lifetime = 0;
+    protected /*private*/ $lifetime = 0;
 
     /**
      * @var string|null
      */
-    private $cacheKey;
+    protected /*private*/ $cacheKey;
 
     /**
      * @param integer                           $lifetime
